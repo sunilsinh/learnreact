@@ -5,7 +5,7 @@ import Routes from './../routes/router';
 
 class Navigation extends Component {
     render() {
-        const test = "ss";
+        const test = "/";
         return (
             <Router>
                 <nav className="navbar navbar-expand-lg navbar-light bg-light">
@@ -16,7 +16,6 @@ class Navigation extends Component {
                         <ul className="nav navbar-nav">
                             <li className="navbar-nav mr-auto"><Link to="/">Home</Link></li>
                             <li className="navbar-nav mr-auto">||<Link to="/users">Users</Link></li>
-                            <li className="navbar-nav mr-auto">||<Link to="/userinfo">User</Link></li>
                             <li className="navbar-nav mr-auto">||<Link to="/adduser">Add User</Link></li>
                         </ul>
                     </div>
