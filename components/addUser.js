@@ -38,9 +38,6 @@ class AddUser extends Component {
     }
   }
   onChangeEvent = (event) => {
-    // let newState = Object.assign({}, this.state);
-    // newState.formInputs[event.target.name] = event.target.value;
-    // this.setState(newState);
 
     let newFormInputs = this.state.formInputs;
     newFormInputs[event.target.name] = event.target.value;
@@ -59,6 +56,7 @@ class AddUser extends Component {
     const { formInputs } = this.state;
 
     if (e.target.value === "Update" && this.props.match.params.id !== null) {
+      console.log(formInputs);
       axios.put(url, formInputs)
         .then((res) => {
           this.setState({ showSuccess: "Updated" });
