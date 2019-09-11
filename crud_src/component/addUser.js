@@ -48,8 +48,6 @@ class AddUser extends Component {
 
   onSubmitGetData = (e) => {
     e.preventDefault();
-
-
     const url = e.target.value === "Update" ? 'http://localhost:4000/api/auth/updateuserbyid/' + this.props.match.params.id :
       'http://localhost:4000/api/auth/registration/';
 
