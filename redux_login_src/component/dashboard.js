@@ -5,7 +5,7 @@ class Dashboard extends Component {
     super(props);
     let loginCheck = true;
     const token = localStorage.getItem("token");
-    console.log("token" +token);
+    console.log("token" + token);
     console.log(token);
     if (token == null) {
       console.log("token null")
@@ -14,7 +14,7 @@ class Dashboard extends Component {
     this.state = {
       loginCheck
     }
-    
+
   }
   render() {
     if (this.state.loginCheck === false) {
@@ -27,7 +27,6 @@ class Dashboard extends Component {
           <Link to="/logout">logout</Link>
         </div>
       </div>
-
     )
   }
 }

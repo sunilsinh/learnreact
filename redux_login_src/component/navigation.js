@@ -15,8 +15,6 @@ class Navigation extends Component {
                         </div>
                         <ul className="nav navbar-nav">
                             <li className="navbar-nav mr-auto"><Link to="/">Home</Link></li>
-                            {/* <li className="navbar-nav mr-auto">||<Link to="/users">Users</Link></li>
-                            <li className="navbar-nav mr-auto">||<Link to="/adduser">Add User</Link></li> */}
                             <li className="navbar-nav mr-auto">||<Link to="/dashboard">Dashboard</Link></li>
                             <li className="navbar-nav mr-auto">||<Link to="/login">Login</Link></li>
 
