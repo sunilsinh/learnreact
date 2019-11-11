@@ -8,10 +8,13 @@ const initialState = {
 }
 const reducer = (state = initialState, action) => {
   const newState = { ...state }
+  // const formData = { ...newState.formData }
   switch (action.type) {
     case ('HANDLE_CLICK'):
       newState.loggedIn = true
-      console.log(newState);
+      newState.formData.email_id = action.payload.email_id
+      newState.formData.password = action.payload.password
+      console.log(newState)
       break;
     case ('ON_CHANGE'):
       return {
@@ -21,8 +24,6 @@ const reducer = (state = initialState, action) => {
     default:
       return state;
   }
-
-
   return newState;
 
 }
